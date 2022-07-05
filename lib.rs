@@ -145,21 +145,3 @@ impl<T: Clone + Hash + Eq> LRUCache<T>
 
 
 
-
-#[test]
-fn test() 
-{
-    let mut t: LRUCache<i32> = LRUCache::new(10);
-
-   for i in 0..10 
-   {
-        t.put(i, i);
-        println!("{:?}", t.cache);
-    }
-   
-
-}
-fn main() 
-{
-    
-}
